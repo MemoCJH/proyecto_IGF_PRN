@@ -1,43 +1,88 @@
 <html>
-    <head>
-        <title>T&iacute;tulo de pagina</title>
-    </head>
 
-    <body>
-        <h1>Tabla</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th>Sexo</th>
-                    <th>Carrera</th>
-                </tr>
-            </thead>
-            <tbody>
-               <tr>
+<head>
+    <title>T&iacute;tulo de pagina</title>
+
+    <!-- Hojas css -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vegetales.html">Enlace otra pagina</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tabla</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="formulario.html">Formulario</a>
+            </li>
+        </ul>
+
+    </nav><br>
+    
+    <h1>Tabla</h1>
+
+    <br>
+
+    
+    <div class="container">
+        <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Sexo</th>
+                <th>Carrera</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
                 <td>Rafael</td>
                 <td>Ramirez</td>
                 <td>Masculino</td>
                 <td>Sistemas</td>
-               </tr> 
-               
-               <tr>
+            </tr>
+
+            <tr>
                 <td>Daniela</td>
                 <td>Andrade</td>
                 <td>Femenino</td>
                 <td>Sistemas</td>
-               </tr>
+            </tr>
 
-                <tr>
-                    <td>Guillermo</td>
-                    <td>Amaya</td>
-                    <td>Masculino</td>
-                    <td>Sistemas</td>
-                </tr>
-               
-            </tbody>
-        </table>
-        <p><a href="index.html">Regresar</a></p>
-    </body>
+            <tr>
+                <td>Guillermo</td>
+                <td>Amaya</td>
+                <td>Masculino</td>
+                <td>Sistemas</td>
+            </tr>
+
+        </tbody>
+    </table>
+    </div>
+
+
+
+    <!-- Scripts JS -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
