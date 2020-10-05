@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-light">
-
-        <!-- Links -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        
+        
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Inicio</a>
@@ -32,46 +32,85 @@
 
     </nav>
 
-    <h1>Formularios</h1>
+
 
     <div class="container">
+        <h1>Formularios</h1>
+        <small class="text-danger">* Obligatorio</small>
         <form action="" method="GET">
 
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br><br>
-    
-            <label for="apellido">Apellido:</label><br>
-            <input type="text" id="apellido" name="apellido"><br><br>
-    
-            <label for="sexo">Sexo:</label><br>
-    
-            <input type="radio" id="M" name="Sexo" value="M" checked>
-            <label for="M">Masculino</label><br>
-    
-            <input type="radio" id="F" name="Sexo" value="F" checked>
-            <label for="F">Femenino</label><br><br>
-    
-            <label for="carrera">Carrera</label><br>
-            <select name="carrera" id="carrera">
-    
-                <option value="" disabled selected>Seleccione una carrera</option>
-                <option value="ingSistemas">Ing. Sistemas</option>
-                <option value="ingIndustrial">Ing. Industrial</option>
-                <option value="ingCivil">Ing. Civil</option>
-    
-            </select><br><br>
-    
-            <button type="submit">Enviar</button>
-    
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre: <span class="text-danger">*</span></label><br>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre"><br><br>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="apellido">Apellido:<span class="text-danger">*</span></label><br>
+                    <input type="text" class="form-control" placeholder="Apellido" id="apellido"
+                        name="apellido"><br><br>
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+
+                <div class="form-group col-md-4">
+
+                    <label for="carrera">Carrera<span class="text-danger">*</span></label><br>
+                    <select name="carrera" id="carrera" class="form-control">
+
+                        <option value="" disabled selected>Seleccione una carrera</option>
+                        <option value="ingSistemas">Ing. Sistemas</option>
+                        <option value="ingIndustrial">Ing. Industrial</option>
+                        <option value="ingCivil">Ing. Civil</option>
+
+                    </select><br><br>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="carne">Carné:<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Carné" id="carne" name="carne">
+                </div>
+
+                <div class="form-group col-md-4">
+
+                    <label for="sexo">Sexo:<span class="text-danger">*</span></label>
+
+
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="M" name="Sexo" value="M" checked>
+                            <label class="form-check-label" for="M">Masculino</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="F" name="Sexo" value="F" checked>
+                            <label class="form-check-label" for="F">Femenino</label>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+            <button type="button" class="btn btn-secondary">Limpiar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
         </form>
     </div>
 
-    
-
-   
 
 
-     <!-- Scripts JS -->
+
+
+
+    <!-- Scripts JS -->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
