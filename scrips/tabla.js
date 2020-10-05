@@ -5,7 +5,7 @@ $(document).ready(function () {
     });
 
     //boton nuevo registro
-    $('#addRegistro').on('click', function () {
-        location.href = $(this).attr('url-fomulario');
+    $('#addRegistro').on('click', function(){
+        location.href = $(this).attr('url-formulario');
     });
 });

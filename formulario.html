@@ -14,101 +14,119 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><i class="fas fa-cat"></i> AL13013</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="vegetales.html">Lista</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tabla.html">Tabla</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Formulario</a>
-            </li>
-            
-          </ul>
-          
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vegetales.html">Lista</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabla.html">Tabla</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Formulario</a>
+                </li>
+
+            </ul>
+
         </div>
-      </nav>
+    </nav>
 
 
 
     <div class="container">
         <h1>Formularios</h1>
-        <small class="text-danger">* Obligatorio</small>
-        <form id="formEstudiante" action="" method="GET">
 
-            <div class="form-row">
+        <div class="card">
+            <div class="card-header ">Informacion del estudiante <small class="text-danger">*Obligatorio</small></div>
 
-                <div class="form-group col-md-6">
-                    <label for="nombre">Nombre: <span class="text-danger">*</span></label><br>
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre"><br><br>
-                </div>
+            <div class="card-body">
+                <form id="formEstudiante" action="" method="GET">
 
-                <div class="form-group col-md-6">
-                    <label for="apellido">Apellido:<span class="text-danger">*</span></label><br>
-                    <input type="text" class="form-control" placeholder="Apellido" id="apellido"
-                        name="apellido"><br><br>
-                </div>
+                    <div class="form-row">
 
-            </div>
-
-
-            <div class="form-row">
-
-
-                <div class="form-group col-md-4">
-
-                    <label for="carrera">Carrera<span class="text-danger">*</span></label><br>
-                    <select name="carrera" id="carrera" class="form-control">
-
-                        <option value="" disabled selected>Seleccione una carrera</option>
-                        <option value="ingSistemas">Ing. Sistemas</option>
-                        <option value="ingIndustrial">Ing. Industrial</option>
-                        <option value="ingCivil">Ing. Civil</option>
-
-                    </select><br><br>
-                </div>
-
-                <div class="form-group col-md-4">
-                    <label for="carne">Carné:<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" placeholder="Carné" id="carne" name="carne">
-                </div>
-
-                <div class="form-group col-md-4">
-
-                    <label for="sexo">Sexo:<span class="text-danger">*</span></label>
-
-
-                    <div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="M" name="Sexo" value="M" checked>
-                            <label class="form-check-label" for="M">Masculino</label>
+                        <div class="form-group col-md-6">
+                            <label for="nombre">Nombre: <span class="text-danger">*</span></label><br>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre"
+                                name="nombre"><br><br>
                         </div>
 
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="F" name="Sexo" value="F" checked>
-                            <label class="form-check-label" for="F">Femenino</label>
+                        <div class="form-group col-md-6">
+                            <label for="apellido">Apellido:<span class="text-danger">*</span></label><br>
+                            <input type="text" class="form-control" placeholder="Apellido" id="apellido"
+                                name="apellido"><br><br>
                         </div>
+
                     </div>
 
 
+                    <div class="form-row">
 
 
-                </div>
+                        <div class="form-group col-md-4">
 
+                            <label for="carrera">Carrera<span class="text-danger">*</span></label><br>
+                            <select name="carrera" id="carrera" class="form-control">
+
+                                <option value="" disabled selected>Seleccione una carrera</option>
+                                <option value="ingSistemas">Ing. Sistemas</option>
+                                <option value="ingIndustrial">Ing. Industrial</option>
+                                <option value="ingCivil">Ing. Civil</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="carne">Carné:<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Carné" id="carne" name="carne">
+                        </div>
+
+                        <div class="form-group col-md-4">
+
+                            <label for="sexo">Sexo:<span class="text-danger">*</span></label>
+
+
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="M" name="Sexo" value="M" checked>
+                                    <label class="form-check-label" for="M">Masculino</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="F" name="Sexo" value="F" checked>
+                                    <label class="form-check-label" for="F">Femenino</label>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </form>
             </div>
-            <button id="limpiar" type="button" class="btn btn-secondary"><i class="fas fa-brush"></i> Limpiar</button>
-            <button type="submit" class="btn btn-primary"><i class="far fa-paper-plane"></i> Enviar</button>
 
-        </form>
+            <div class="card-footer">
+
+                <div class="float-right">
+                    <button id="limpiar" type="button" class="btn btn-secondary"><i class="fas fa-brush"></i>
+                        Limpiar</button>
+                    <button type="submit" class="btn btn-primary"><i class="far fa-paper-plane"></i> Enviar</button>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
 
@@ -124,7 +142,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Script formulario -->
-  <script src="scrips/formulario.js"></script>
+    <script src="scrips/formulario.js"></script>
 
 </body>
 
